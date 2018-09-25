@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+   body{ font-size:14px;}
+		input{ vertical-align:middle; margin:0; padding:0}
+		.file-box{ position:relative;width:900px}
+		.txt{ height:34px; border:1px solid #cdcdcd; width:580px;}
+		.btn{ background-color:#FFF; border:1px solid #CDCDCD;height:34px; width:85px;}
+		.file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
+    </style>
+</head>
+<body>
+<div style="background-color: #fff;width: 100%;height: 700px">
+<!-- <div style="padding: 100px 100px 10px;"> -->
+	<form class="bs-example bs-example-form" role="form" style="background-color: #f0fff0">
+		<div class="row">
+			
+			<div class="col-md-10" style="margin-left: 80px;margin-top: 10px;">
+			
+				<div class="file-box">
+					  <form action="" method="post" enctype="multipart/form-data">
+					 <input type='text' name='textfield' id='textfield' class='txt' />  
+					 <input type='button' class='btn' value='浏览...' />
+					    <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+					 <input type="submit" name="submit" class="btn" value="上传" />
+					 <button class="btn" style="margin-left: 50px">刷新</button>
+					  </form>
+				</div>
+			</div><!-- /.col-lg-6 -->
+           
+           <div class="col-md-4" style="margin-left: 80px;margin-top: 10px;">
+			
+				<div class="input-group">
+
+					<input type="text"  class="form-control">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							类型
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="#">功能</a></li>
+							<li><a href="#">另一个功能</a></li>
+							<li><a href="#">其他</a></li>
+							<li class="divider"></li>
+							<li><a href="#">分离的链接</a></li>
+						</ul>
+					</div><!-- /btn-group -->
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-4 -->
+				<div class="col-md-4" style="margin-top: 10px; margin-left: 10px;">	
+		            <div class="input-group">
+
+						<input type="text"  class="form-control">
+							<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									数据年份
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">功能</a></li>
+								<li><a href="#">另一个功能</a></li>
+								<li><a href="#">其他</a></li>
+								<li class="divider"></li>
+								<li><a href="#">分离的链接</a></li>
+							</ul>
+							</div><!-- /btn-group -->
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-4 -->
+				<div class="col-md-12" style="margin-top: 10px;">	
+                    <div class="table-responsive">
+	                    <table class="table">
+		                    
+		                    <thead>
+								<tr>
+	                                <td>   </td>
+									<th>序号</th>
+									<th>年度</th>
+									<th>月份</th>
+									<th>单位代码</th>
+									<th>单位</th>
+									<th>市区</th>
+									<th>区域</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>   </td>
+									<td >1</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>796140825</td>
+									<td>苏州海大饲料</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								
+								</tr>
+							   <tr>
+								   	<td>   </td>
+									<td>2</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>072707996</td>
+									<td>苏州市吴江</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								 <tr>
+								   	<td>   </td>
+									<td>3</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>91320509</td>
+									<td>苏州市好阿优</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								 <tr>
+								   	<td>   </td>
+									<td>4</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>672004338</td>
+									<td>苏州市晶峰食品</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								<tr>
+								   	<td>   </td>
+									<td>5</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>798345672</td>
+									<td>吴江市同里</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								<tr>
+									<td>   </td>
+									<td>6</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>578107146</td>
+									<td>江苏金狮食品</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								 <tr>
+								   	<td>   </td>
+									<td>7</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>913205098</td>
+									<td>苏州市祥品食品</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								<tr>
+								   	<td>   </td>
+									<td>8</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>75274175</td>
+									<td>吴江成龙淀粉</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+								<tr>
+									<td>   </td>
+									<td>9</td>
+									<td >2017</td>
+									<td>12</td>
+									<td>91320509</td>
+									<td>苏州赣康新颖</td>
+									<td>吴江区</td>
+									<td>开发区</td>
+								</tr>
+							</tbody>	
+						</table>
+				</div>
+		</div><!-- /.row -->
+	</form>
+</div>
+</div>
+</body>
+</html>

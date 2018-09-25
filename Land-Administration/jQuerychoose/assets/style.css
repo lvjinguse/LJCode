@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.menus {
+
+    /*左边菜单栏属性*/
+    width: 100%;
+    height: 600px;
+    background: rgb(92,94,103);
+    float: left;
+    overflow: hidden;
+}
+
+ .menus li {
+
+    /*菜单栏 选项标签属性*/
+
+    width: 100%;
+    height: 70px;
+    background: rgb(92,94,103);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    line-height: 70px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+   
+}
+/*.tabView .menus li:nth-child(7) {
+    border-bottom: none;
+    background-color: yellow;
+}*/
+
+.bg {
+    /*当鼠标移动到对应标签时 标签的属性*/
+    height: 90px !important;
+    background:  #16B398/*rgb(0,159,233)*/ !important;
+    line-height: 110px !important;
+}
+ .tabright {
+
+    /*右边显示内容模块 底层*/
+
+    float: left;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-left: 0px;
+    background: white/*rgba(0,0,0,0.5)*/;
+}
+.tableView_right {
+    /* 右边显示内容模块  上层*/
+    width: 100%;
+    height: 500px;
+    color: #333;
+    text-align: center;
+
+    position:relative;
+}
+/*.tableView_right img {
+    width: 100%;
+    position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;*/
+}
+.scroll {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}

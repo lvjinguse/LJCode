@@ -1,0 +1,268 @@
+<!DOCTYPE 5tml>
+<html>
+<head>
+	<title></title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>  
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel="stylesheet" type="text/css" href="userManager/userManager.css">
+</head>
+<body>
+<div style="background-color: #f0fff0;width: 100%;height: 700px">
+    <div class="container">
+         
+    
+        <div id="content" class="row-fluid">
+        <div class="col-md-9" style="background-color: #f0fff0;height:700px;">
+        	 
+             <link rel="stylesheet" type="text/css" href="css/table.css" />   
+                                <table id="table">
+                                <thead>
+                                <tr >
+                                <th>序号</th>
+                                <th>姓名</th>
+                                <th>登录名</th>
+                                <th>操作权限</th>
+                                <th>管理区权限</th>
+                                <th>最后登录时间</th>
+                                <th>操作</th>
+                                </tr>
+                               </thead>
+                               <tbody id="tbody">
+                               <!--  <tr>
+                                <td >1</td>
+                                <td >系统管理员</td>
+                                <td>admin</td>
+                                <td>管理员</td>
+                                <td>吴江经济技术开发区</td>
+                                <td>2018/3/22 17:40</td>
+                                <td><button class="btn btn-info" onclick="dodel(this)">删除</button></td>
+                                </tr>
+                                
+                                <tr>
+                                <td>2</td>
+                                <td >浦东用户1</td>
+                                <td>pudong1</td>
+                                <td>浏览人员</td>
+                                <td>浦东</td>
+                                <td></td>
+                                <td><button class="btn btn-info" onclick="dodel(this)">删除</button></td>
+                                </tr>
+                                
+                                <tr>
+                                <td>3</td>
+                                <td>浦东用户2</td>
+                                <td>pudong2</td>
+                                <td>浏览人员</td>
+                                <td>浦东</td>
+                                <td></td>
+                                <td><button class="btn btn-info" onclick="dodel(this)">删除</button></td>
+                                </tr>
+                                
+                                <tr>
+                                <td>4</td>
+                                <td>浦东用户3</td>
+                                <td>pudong3</td>
+                                <td>浏览人员</td>
+                                <td>浦东</td>
+                                <td>2017/10/29 2:30</td>
+                                <td><button class="btn btn-info" onclick="dodel(this)">删除</button></td>
+                                </tr>
+                            
+                                <tr>
+                                <td>5</td>
+                                <td>浦东用户4</td>
+                                <td>pudong4</td>
+                                <td>浏览人员</td>
+                                <td>浦东</td>
+                                <td>2017/11/07 14:35</td>
+                                <td><button class="btn btn-info" onclick="dodel(this)">删除</button></td>
+                                </tr>
+                                
+                                <tr>
+                                <td>6</td>
+                                <td>浦西用户</td>
+                                <td>puxi</td>
+                                <td>浏览人员</td>
+                                <td>浦西</td>
+                                <td>2017/10/29 2:35</td>
+                                <td><button  class="btn btn-info" onclick="dodel(this)">删除</button></td>
+                                </tr> -->
+                                </tbody>
+                            </table>
+                            <br> 
+                                <h4>添加用户信息</h4>
+                                <form action="#" name="myform" onsubmit="return doAdd()">
+                                    序　　号：<input type="text" name="num"/>
+                                    姓　　名：<input type="text" name="name"/><br>
+                                    登　录名：<input type="text" name="username"/>
+                                    操作权限：<input type="text" name="behavior"/><br>
+                                    管理权限：<input type="text" name="manage"/>
+                                    登录时间：<input type="text" name="time"/>
+                                              <input class="btn btn-info" type="submit" value="添加"/>
+
+                                </form>
+                                <script type="text/javascript">
+                                    //执行删除的方法
+                                    function dodel(bt){
+                                        //获取表格节点
+                                        var tab = document.getElementById("table");
+                                        tab.deleteRow(bt.parentNode.parentNode.rowIndex);
+
+                                        $.ajax({
+                                            url: "http://122.114.38.213:8080/wjkfq_gis/lyRemoteServ/DelUserData",
+                                            method: "GET",
+                                            data: {
+                                              id:"1"
+                                            },
+                                            success: (res)=>{
+                                                console.log(res);
+                                               alert(res)
+                                            }
+                                        });
+
+                                    }
+                                    //获取个人信息
+                                    function person1() {
+
+
+                                        $.ajax({
+                                            url: "http://122.114.38.213:8080/wjkfq_gis/home/loginbyjson",
+                                            method: "GET",
+                                            data: {
+                                                username: 'admin',
+                                                password: '123456'
+                                            },
+                                            success: (res) => {
+                                                console.log(res);
+                                                alert(res);
+                                            }
+                                        });
+                                    }
+
+                                    //执行添加
+                                    function doAdd(){
+                                    //获取表单信息
+                                        var num = document.myform.num.value;
+                                        var name = document.myform.name.value;
+                                        var username= document.myform.username.value;
+                                        var behavior= document.myform.behavior.value;
+                                        var manage = document.myform.manage.value;
+                                        var time  = document.myform.time.value;
+                                        //获取表格并申请添加一行
+                                        var row = document.getElementById("table").insertRow();
+                                        //为当前行添加一个个字段
+                                        row.insertCell(0).innerHTML = num;
+                                        row.insertCell(1).innerHTML = name;
+                                        row.insertCell(2).innerHTML = username;
+                                        row.insertCell(3).innerHTML = behavior;
+                                        row.insertCell(4).innerHTML = manage;
+                                        row.insertCell(5).innerHTML = time;
+                                        row.insertCell(6).innerHTML = '<button class="btn btn-info onclick="dodel(this)">删除</button>';
+
+                                            //当前表单清空
+                                            document.myform.reset();
+
+                                            return false;
+                                    }
+                                </script>
+                        </div> 
+                                         
+        </div>
+        <div class="col-md-3" style="background-color: #f0fff0;height: 550px;">
+            <div class="contentRight">
+
+                            操作权限：
+                           <!--  <select style="width: 130px">
+                                <option>点击选择</option>
+                                <option selected="selected"></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select> -->
+                           <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">原始
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">功能</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">另一个功能</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">其他</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">分离的链接</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br> 
+                            <br>
+
+                             管理区权限：
+                            <div class="PermissionsBottom">
+
+                               <div class="PermissionsChoose">
+                                    
+                                    <iframe src="../shuxing/meihuachecked.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+                                    </div> 
+                            </div>
+                            
+ 
+                            <div class="PermissionsBtn"><br>
+                                <button  style="width: 50%;">全选</button><br>
+                                <button  style="width: 50%;">反选</button><br>
+                                <button  style="width: 50%;">清除</button><br>
+                                <button  style="width: 50%;">确定</button>
+                            </div>
+
+                            </div>
+                            
+                        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+                                $(document).ready(function (){
+                                $.ajax({
+                                     type:"get",
+                                     dataType: "json",
+                                     url: "http://122.114.38.213:8080/wjkfq_gis/lyRemoteServ/GetAllUserInfoData",
+                                   
+                            
+                                    success: function (res){
+                                        console.log(res);
+                                        displayRes(res)
+                                        }
+                                    });
+                                })
+
+                                function displayRes(res) {
+                                    $("#tbody").empty();
+                                    for(var i = 0; i < res.length; i++ ){
+                                        $("#tbody").append('<tr>' +
+                                            '<td>' + res[i].$id + '</td>' +
+                                            '<td>' + res[i].Name + '</td>' +
+                                            '<td>' + res[i].LoginName + '</td>' +
+                                            '<td>' + res[i].bsR_Name + '</td>' +
+                                            '<td>' + res[i].bsO_Righrs + '</td>' +
+                                            '<td>' + res[i].LLoginDT + '</td>' +
+                                             '<td>' + '<button  class="btn btn-info" onclick="dodel(this)">' + '删除' + '</button>' + '</td>'
+                                            + '</tr>'                                            
+                                            )
+                                    }
+                                }
+                            </script>
+</body>
+</html>

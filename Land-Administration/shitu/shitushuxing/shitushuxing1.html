@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>目录树折叠菜单jquery版(复选框)-jq22.com</title>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+ul {
+  list-style:none;
+  padding:0;
+}
+#menu .tree1 {
+  padding:14px 14px 14px 39px;
+  color:#6F93FF;
+  font-size:14px;
+  font-family:"微软雅黑";
+  border-bottom:solid 1px #eee;
+}
+#menu #tree_root {
+  overflow:auto;
+}
+#menu #tree_root li span {
+  display:block;
+  height:17px;
+  line-height:18px;
+  color:#222;
+  cursor:pointer;
+}
+#menu #tree_root li span.tree2 {
+  padding:6px 6px 6px 20px;
+}
+#menu #tree_root li span.tree3 {
+  padding:6px 6px 6px 34px;
+}
+#menu #tree_root li span.tree4 {
+  padding:6px 6px 6px 48px;
+}
+#menu #tree_root li span.tree5 {
+  padding:6px 6px 6px 62px;
+}
+#menu li .hover,#menu li span:hover {
+  background-color:skyblue;
+}
+#menu ul {
+  overflow:hidden;
+}
+#menu ul li b {
+  font-weight:normal;
+  position:relative;
+  padding-left:16px;
+}
+#menu ul li b:before {
+  display:block;
+  font-size:0;
+  top:5px;
+  left:0;
+  content:"";
+  width:4px;
+  height:4px;
+  border:solid 1px transparent;
+  transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  position:absolute;
+}
+#menu ul li .On:before,#menu ul li .On2Off:before {
+  top:3px;
+  border-bottom-color:#999;
+  border-right-color:#999;
+}
+#menu ul li .Off:before {
+  top:5px;
+  border-top-color:#999;
+  border-right-color:#999;
+}
+#menu ul li .On2Off:before {
+  transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: #fff url(../../image/blue.png);
+  height: 22px;
+  vertical-align: middle;
+  width: 20px;
+}
+
+input[type="checkbox"]:focus,
+input[type="checkbox"]:hover {
+  background-position: -22px 0;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background-position: -21.5px 0;
+}
+
+
+</style>
+    <script type="text/javascript">
+ //获取checkbox按钮组
+ var allpro = document.getElementsByName("c1");
+ //全选方法
+ function change() {
+    //获取全选按钮
+ var all = document.getElementById("all");
+ //全选按钮被选中时，遍历所有按钮
+    if (all.checked) {
+     for (var i = 0; i < allpro.length; i++) {
+     if (allpro[i].type=="checkbox") {
+     allpro[i].checked=true;
+
+     }
+     }
+     //全选按钮未被选中时
+    }else{
+     for (var i = 0; i < allpro.length; i++) {
+     if (allpro[i].type=="checkbox") {
+     allpro[i].checked=false;
+     }
+     }
+    }
+ }
+ //反选的方法
+ function revs() {
+    //获得反选按钮
+ var reverse = document.getElementById("checkbox");
+ //反选按钮被选中时，遍历所有按钮
+    if (reverse.checked) {
+     for (var i = 0; i < allpro.length; i++) {
+     if (allpro[i].type=="checkbox"&&allpro[i].checked==true) {
+     allpro[i].checked= false;
+     }else if (allpro[i].type=="checkbox"&&allpro[i].checked==false) {
+     allpro[i].checked= true;
+     }
+
+     }
+     //反选按钮未被选中时
+     }else{
+        for (var i = 0; i < allpro.length; i++) {
+     if (allpro[i].type=="checkbox"&&allpro[i].checked==true) {
+     allpro[i].checked= false;
+     }else if (allpro[i].type=="checkbox"&&allpro[i].checked==false) {
+     allpro[i].checked= true;
+     }
+
+     }
+     }
+    }
+
+</script>
+</head>
+<body>
+<div id="menu">
+     
+    <ul id="tree_root">
+        <li>
+            <span class="tree2"><b class="Off">叠加图层</b></span>
+            <ul style="display:none;">
+                <li><span class="tree3"><b>行政区</b><input type="checkbox" name="c1" id="checkbox">
+                    </span></li>
+                <li><span class="tree3"><b>管理区</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>企业范围</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>房屋建筑</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>河流</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>道路</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+               <!--  <li><span class="tree3"><b>三港</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>文安</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>湘溇</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>肖甸湖</b><input type="checkbox" name="c1" id="checkbox"></span></li>
+                <li><span class="tree3"><b>北联</b><input type="checkbox" name="c1" id="checkbox"></span></li> -->
+               
+                
+            </ul>
+        </li>
+
+        <input type="checkbox" name="c0" id="all" value="全选" onclick="change()" style="margin-left: 30px;">全选
+        <input type="checkbox" name="r0" id="revcheck" value="反选" onclick="revs()" style="margin-left: 20px;">反选
+
+            
+    </ul>
+        
+</div>
+
+<script>
+$(function() {
+    //目录树折叠按钮 -------------------------------
+    function setTreeStyle(obj) {
+        var objStyle = obj.children("b");
+        var objList = obj.siblings("ul");
+        if (objList.length == 1) {
+            var style = objStyle.attr("class");
+            objStyle.attr("class", "On2Off");
+            setTimeout(
+                function() {
+                    if (style == "Off") {
+                        objList.parent().siblings("li").children("span").children(".On").each(function() {
+                            setTreeStyle($(this).parent());
+                        });
+                        var H = objList.innerHeight()
+                        objList.css({
+                            display: "block",
+                            height: "0"
+                        });
+                        objList.animate({
+                            height: H
+                        }, 300, function() {
+                            $(this).css({
+                                height: "auto"
+                            });
+                        });
+                        objStyle.attr("class", "On");
+                    } else if (style == "On") {
+                        objList.find("li").children("span").children(".On").each(function() {
+                            setTreeStyle($(this).parent());
+                        });
+                        var H = objList.innerHeight()
+                        objList.animate({
+                            height: 0
+                        }, 300, function() {
+                            $(this).css({
+                                height: "auto",
+                                display: "none"
+                            })
+                        });
+                        objStyle.attr("class", "Off");
+                    }
+                },
+                42
+            );
+        }
+    }
+    $("#tree_root").find("li").children("span").click(function() {
+        setTreeStyle($(this));
+    });
+    // -----------------------------------------  
+})
+</script>
+   
+
+</body>
+</html>

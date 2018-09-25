@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="mainjs.js"></script>
+    <title>土地资源管理系统</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+      <meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+      <meta name="author" content="Codrops" />
+      
+       <!-- 外部样式表 -->
+      <link rel="shortcut icon" href="../favicon.ico"> 
+      <link rel="stylesheet" type="text/css" href="css/default.css" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+      <link rel="stylesheet" type="text/css" href="home.css"/>
+      <link rel="stylesheet" type="text/css" href="usemanage/userManager/userManager.css">
+      <link rel="stylesheet" href="DataStatistics/DataStatistics.css"/> 
+      <link rel="stylesheet" type="text/css" href="safeManager/safe.css">
+      <link rel="stylesheet" type="text/css" href="companyStatistics/companyStatics.css">
+      <link rel="stylesheet" type="text/css" href="css/table.css" />
+      <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	  <link rel="stylesheet" href="css/duty.css" />
+	 <!--  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+	 
+
+	  <link rel="stylesheet" href="css\2.css"/>
+	  <script src="js/modernizr.custom.js"></script>
+	  <script src="js/jquery-1.8.3.min.js"></script>
+	  <script src="companyStatistics/companyStstics.js"></script>
+	  <script src="js/tab.js"></script>
+	  <script src="js/data-JS.js"></script>
+	  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script>
+		$(function () {
+		  $('[js-tab=2]').tab({
+			curDisplay: 2,
+			changeMethod: 'horizontal'
+		  });
+
+		});
+	  </script>
+                   	
+                 
+</head>
+<body>
+
+<!-- 用户管理 -->
+	<div class="md-modal md-effect-1" id="modal-1">
+	 <!-- <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	  <script type="text/javascript" src="jquery-3.2.1.min.js" ></script>
+	  <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script> -->
+			<div class="md-content">
+                
+				<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        	<h2 class="userManagerTtile">用户管理</h2>
+                <!-- <div class="box1" >   -->
+					 <iframe src="usemanage/usemanage.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>						
+				                         
+							<!-- 表格右边内容 -->
+
+						<!-- <div class="contentRight">
+
+							操作权限：
+							<select style="width: 130px">
+								<option>点击选择</option>
+								<option selected="selected"></option>
+								<option></option>
+								<option></option>
+								<option></option>
+								<option></option>
+							</select>
+
+							<br>
+							<br>
+
+							 管理区权限：
+							<div class="PermissionsBottom">
+
+							   <div class="PermissionsChoose">
+								    
+								    <iframe src="shuxing/shuxing.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+                                    </div> 
+                            </div>
+                            
+ 
+							<div class="PermissionsBtn"><br>
+								<button  style="width: 50%;">全选</button><br>
+                                <button  style="width: 50%;">反选</button><br>
+								<button  style="width: 50%;">清除</button><br>
+								<button  style="width: 50%;">确定</button>
+							</div>
+
+							</div>-->
+							
+						</div> 
+						
+					</div>
+
+	    		</div>  
+            </div>
+    </div>
+
+
+	<!--数据信息管理 -->
+    <div class="md-modal md-effect-1" id="modal-2">
+			<div class="md-content">
+
+				<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        	<h2 class="userManagerTtile">数据信息管理</h2>
+
+				<!-- <div class="box1" >  -->
+				    <iframe src="nummanage/nummanage.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+		        								
+            </div>
+    </div>
+  
+
+
+	<!-- 数据统计 -->
+    <div class="md-modal md-effect-1" id="modal-3">
+			<div class="md-content">
+
+				<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        	<h2 class="userManagerTtile">数据统计</h2>
+
+				<!--  <div class="box1" >  -->
+                    <iframe src="DataStatistics/DataStatistics.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+  
+					<!-- <div class="tongjileftDiv">  -->
+						<!-- 统计图 盒子-->
+		        		<!-- <div class="statisticalFigure"> -->
+
+		        			<!-- 画布显示 -->
+		        			<!-- <canvas id="canvas_circle" width="700" height="500px">  
+				                	
+				            </canvas>  
+
+		        		</div> -->
+
+		        				 		
+				</div>
+			</div>
+	</div>  
+				
+	<!-- 数据信息管理 -->
+    <div class="md-modal md-effect-1" id="modal-4">
+		<div class="md-content">
+
+			<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        <h2 class="userManagerTtile">区域、行业信息查询</h2>
+	            <iframe src="information/information.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+
+		</div>
+	</div>
+
+	<!-- 专题图输出 -->
+    <div class="md-modal md-effect-1" id="modal-5">
+			<div class="md-content">
+				<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        	<h2 class="userManagerTtile">专题图输出</h2>
+				<div class="box1" > 
+                   <!-- <img src="image/map.png" width="100%" height ="100%"> -->
+                   <iframe src="lj_dt.html" frameborder="no" style="width: 100% ;height: 100%"></iframe>
+	    		</div>  	
+
+
+			</div>
+	</div>
+
+
+	<!-- 安全管理-->
+    <div class="md-modal md-effect-1" id="modal-6">
+			<div class="md-content">
+				<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        	<h2 class="userManagerTtile">用地企业安全信息</h2>
+	        	    <iframe src="safeManager/safe.html" frameborder="no" style="width: 100% ;height: 100%"></iframe>
+				
+	    	</div>  				
+	</div>
+	
+
+
+	<!-- 视图 -->
+    <div class="md-modal md-effect-1" id="modal-7">
+			<div class="md-content">
+				<span class="userManagerClose"><button class="md-close alertbutton">关闭</button></span>
+	        	<h2 class="userManagerTtile">视图</h2>
+	        	    <iframe src="shitu/shitu1.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+				<!-- <div class="box1" > 
+                    <div class="homebottom"> -->
+			         <!-- 右侧操作模块 -->
+					<!-- <div class ="rightTop">
+						小地图 图层透明
+					</div> -->
+					<!-- 管理区 -->
+					<!-- <div class="rightCenter">
+					    管理区							
+				         <div class="containe">
+			             <div class="tree_content">
+	                     <div class="tree_node">
+	                     <div class="div_inline"><input type="button" value="-" class="tree_node_toggle_button"></div>
+	                     <div class="div_inline tree_node_parent">
+	                     <input type="checkbox" class="tree_node_parent_checkbox">屯村街道办
+	                     <div class="tree_node_child">         		
+		                    <input type="checkbox" class="tree_node_child_checkbox">邱舍工业区<br>
+		                    <input type="checkbox" class="tree_node_child_checkbox">屯村社区<br>					
+					    </div>
+					    </div>
+                        </div>
+                        </div>
+		                </div> -->
+           
+	                   <!--  <div class="tree_node"> -->
+	                    <!-- 切换子目录隐藏或显示的按钮 -->
+	              <!--       <div class="div_inline"><input type="button" value="-" class="tree_node_toggle_button"></div>
+	                    <div class="div_inline tree_node_parent">
+	                    <input type="checkbox" class="tree_node_parent_checkbox">同里街道办
+	                    <div class="tree_node_child">
+	                    <input type="checkbox" class="tree_node_child_checkbox">同里科技产业园<br>
+	                    <input type="checkbox" class="tree_node_child_checkbox">同里社区<br>	                   
+                        </div>
+                        </div>
+                        </div> -->
+                    <!-- </div> -->
+      
+					<!-- 叠加图层区 -->
+				<!-- 	<div class="rightBottom">
+						叠加图层区                    		
+				         <div class="containe">
+			             <div class="tree_content">
+	                     <div class="tree_node">
+	                     <div class="div_inline"><input type="button" value="-" class="tree_node_toggle_button"></div>
+	                     <div class="div_inline tree_node_parent">
+	                     <input type="checkbox" class="tree_node_parent_checkbox">叠加图层
+	                     <div class="tree_node_child">         
+		
+		                    <input type="checkbox" class="tree_node_child_checkbox">行政区<br>
+		                    <input type="checkbox" class="tree_node_child_checkbox">管理区<br>
+		                    <input type="checkbox" class="tree_node_child_checkbox">企业范围<br>
+		                    <input type="checkbox" class="tree_node_child_checkbox">房屋建筑<br>
+		                    <input type="checkbox" class="tree_node_child_checkbox">河流<br>
+		                    <input type="checkbox" class="tree_node_child_checkbox">道路<br>
+		                   
+	                    </div>
+	                    </div>
+	                    </div>
+	                    </div>
+	                    </div>
+					</div>			  
+			        </div>
+		        </div>  -->
+	        </div>	
+	</div>  
+
+    <div class="background">               
+        <div class="top">
+            <div class="imageDiv">          
+            <img src="image\组 4@2x.png" width="160%">            
+            </div> 
+
+            <div class="loginView" >           	              	   
+                <div class="logCard">
+              	<!--  <button ="login()">注册 | 登录</button> -->
+                  <!--  <a>
+                   	<button type="button" onclick="person1()" id="personid">个人信息</button>
+
+                   </a> -->
+                    <a href="login/login.html"  >
+                        <button class="btn btn-info" type="button" onclick="exitmt1()" id="exitid">退出登录</button>
+                     </a>
+                </div>
+           </div> 
+             
+        </div>  
+    
+    
+        <div class="bttomDiv">
+
+            <div class ="bottmLeftDiv">
+               <link rel="stylesheet" type="text/css" href="jQuerychoose/assets/style.css">
+				<ul class="menus">
+					<li class="bg"><img src="image\信息 拷贝.png" width="10%">&nbsp;企业信息&nbsp;<img src="image\矩形 3@2x.png" ></li>
+					<li><img src="image\企业.png" width="10%">&nbsp;房屋管理&nbsp;<img src="image\矩形 3@2x.png" ></li>
+				</ul>
+				           
+            </div>
+       
+            <div class="bottomRightDiv">              
+                <div class="NavDiv">
+                    <!-- 导航条 -->
+                    <div class="chooseCard">
+                        
+	                    <button class="md-trigger alertbutton" data-modal="modal-1" style="width: 200px;" onclick='change()'>用户管理</button>
+
+	                    <button class="md-trigger alertbutton" data-modal="modal-2" style="width: 200px;">数据信息管理</button>
+
+	                    <button class="md-trigger alertbutton" data-modal="modal-3" style="width: 200px;">数据统计</button>
+
+	                    <button class="md-trigger alertbutton" data-modal="modal-4" style="width: 200px;">信息查询</button>
+
+	                    <button class="md-trigger alertbutton" data-modal="modal-5" style="width: 200px;">专题图输出</button>
+
+	                    <button class="md-trigger alertbutton" data-modal="modal-6" style="width: 200px;">安全管理</button>
+
+	                    <button class="md-trigger alertbutton" data-modal="modal-7" style="width: 200px;">视图</button>
+                      
+     				</div>                 
+                </div>
+
+                <div class="titleleft">
+	                <div style="width: 30%;height: 525px;background-color: white;margin-top: 10px;">
+
+	                    <div class="tabright">
+
+		                    <div class="scroll">
+						        <div class="tableView_right">
+							         <table id="table">
+							         	<tr>                                
+									    <th>字段名</th>
+									    <th>字段值</th>								
+									    </tr>
+										<tr>
+									    <td>编码</td>
+									    <td>600</td>                
+										</tr>
+										<tr>
+										<td>建筑编码</td>
+									    <td>KFQQY553</td>               
+										</tr>
+									    <tr>
+										<td>纳税人识别号</td>
+										<td></td>               
+										</tr>
+										<tr>
+										<td>用地企业名称</td>
+									    <td>九龙科技集团</td>               
+										</tr>
+										<tr>
+									    <td>土地坐落</td>
+										<td></td>               
+										</tr>
+									    <tr>
+									    <td>注册类型</td>
+										<td></td>               
+										</tr>
+										<tr>
+										<td>注册时间</td>
+										<td></td>               
+										</tr>
+									    <tr>
+									    <td>经营范围</td>
+										<td></td>               
+										</tr>
+										<tr>
+									    <td>行业大类</td>
+										<td></td>               
+										</tr>
+										<tr>
+										<td>发证面积</td>
+										<td></td>               
+										</tr>
+										<tr>
+										<td>占地面积</td>
+										<td></td>               
+									    </tr>
+									    <tr>
+										<td>建筑占地面积</td>
+										<td></td>               
+										</tr>
+										<tr>
+										<td>建筑面积</td>
+									    <td></td>               
+									    </tr>
+									    <tr>
+									    <td>权属性质</td>
+									    <td></td>               
+										</tr>
+							        </table>
+						        </div>
+
+			                    <div class="tableView_right">
+							        <table id="table">
+										<tr>                                
+									    <th>字段名</th>
+									    <th>字段值</th>								
+									    </tr>
+									    <tr>
+									    <td>编码</td>
+									    <td>8418</td>								
+									    </tr>
+										<tr>
+										<td>JZBH</td>
+										<td></td>								
+										</tr>
+										<tr>
+										<td>SSDKBH</td>
+										<td></td>								
+										</tr>
+										<tr>
+										<td>所属用地企业名称</td>
+										<td>江苏奥维信亨通光<br>学技术</td>								
+										</tr>
+										<tr>
+										<td>所属租赁企业代码</td>
+										<td>QYNP195</td>								
+										</tr>
+										<tr>
+										<td>SSZLQYMC</td>
+										<td></td>								
+										</tr>
+										<tr>
+										<td>楼层数</td>
+										<td>1</td>								
+										</tr>
+										<tr>
+										<td>建筑占地面积</td>
+										<td>136.13</td>								
+										</tr>
+										<tr>
+										<td>所属行政区代码</td>
+										<td>320584400</td>								
+										</tr>
+										<tr>
+										<td>所属行政区名称</td>
+										<td>吴江经济开发区<br>（同里镇）</td>								
+										</tr>
+										<tr>
+										<td>所属管理区代码</td>
+										<td>320584400223</td>								
+										</tr>
+										<tr>
+										<td>所属管理区名称</td>
+										<td>运东</td>								
+										</tr>
+				                    </table>
+
+						        </div>
+		                    </div>
+	                    </div>
+	                </div>
+            
+			       <script src="jQuerychoose/js/jquery-1.8.3.min.js"></script>
+			       <script type="text/javascript" src="jQuerychoose/assets/index.js"></script>
+              
+
+                <div style="width: 69.5%;height:525px;background-color: white;margin-top: 10px;margin-left: 10px">                            
+    	            <iframe src="lj_dt.html" scrolling="no" frameborder="no" style="width: 100%;height:100%;" ></iframe>
+	            </div>
+		    </div>
+        </div>
+    </div>
+                              
+                   
+
+	<!-- 透明遮罩 -->
+	<div class="md-overlay"></div>
+
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+
+	<script>
+		
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="js/cssParser.js"></script>
+	<script src="js/css-filters-polyfill.js"></script>
+
+</body>
+</html>
+
+<script language="javascript">
+ 
+ var data = [];
+
+// function change(){
+// 	$.ajax({
+// 		url: "http://122.114.38.213:8080/wjkfq_gis/lyRemoteServ/GetAllUserInfoData",
+// 		method: "GET",
+// 		data: {
+// 		},
+// 		success: (res)=>{
+// 			this.data = res;
+// 			console.log(data);
+// 		}
+// 	});
+// }
+</script>
+<script language="javascript">
+ 
+
+function getone(){
+	$.ajax({
+		url: "http://122.114.38.213:8080/wjkfq_gis/lyRemoteServ/GetOneUserData",
+		method: "GET",
+		data: {
+			id='a851d909-6476-4af5-8931-ef5ca75fbe70'
+		},
+		success: (res)=>{
+			console.log(res);
+		}
+	});
+}
+
+</script>

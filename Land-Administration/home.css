@@ -1,0 +1,411 @@
+a:link,a:visited
+{
+display:flex;
+font-weight:normal;
+font-size:14px;
+font-family:"宋体";
+color: #333;
+background-color:white;
+width:100px;
+text-align:center;
+padding:0px;
+text-decoration:none;
+
+}
+
+/*a:hover,a:active
+{
+background-color:#16B398;
+}*/
+
+* { margin: 0; padding: 0; }
+body { font-family: "宋体"; font-size: 14px; color: #fff; height: 100%;}
+a, a:hover { text-decoration: none; color: #333; }
+ul, li { list-style: none; }
+
+li{  
+    position:relative !important;  
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-color: #2B3946;
+
+}  
+  
+li input {    
+position:absolute;left:0;margin-left:0;opacity:0;z-index:2;cursor:pointer;height:1em;width:1em;top:0;    
+}    
+input + ol {   
+display:none;    
+background:url('../myImg/toggle.png') 0px 0px no-repeat;  
+margin:-1em 0 0 0;  
+display:block;   
+padding:1em 0 0 1em;   
+background-size:.8em .8em;   
+border-style: solid;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-color: #2B3946;
+}    
+input + ol > li {    
+height:0;overflow:hidden;padding-left:1px;    
+}    
+li label,a {  
+
+ cursor:pointer;display:block;padding-left:1.3em;  
+}    
+input:checked + ol {    
+ background:url('../myImg/toggled.png') 0px 0px no-repeat;  
+ display:block;   
+ background-size:.8em .8em;  
+}    
+input:checked + ol > li {    
+height:auto;    
+} 
+
+.liNoLine {
+
+border-style: solid;
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+
+}
+
+.box{  
+    z-index:999;
+    position: fixed;  
+    width: 100%;  
+    height: 100%;  
+    background: rgba(0,0,0,0.5);  
+    display: none;  
+}  
+.box1{ 
+
+    background-color: #F0FFF0;
+    width: 100%;  
+    height: 95%;  
+    top: 5%;
+    border-radius: 3px;
+    position: fixed; 
+} 
+
+.boxTop {
+  display: flex;
+  justify-content: flex-start;
+  text-align: right;
+  width: 100%;
+}
+
+.dataChoose { 
+  
+  /*text-align: center;*/
+  width: 100%;
+
+}
+
+.inputstyle{
+
+    width: 144px;
+
+    height: 41px;
+
+    cursor: pointer;
+
+    font-size: 30px;
+
+    outline: medium none;
+
+    position: absolute;
+
+    filter:alpha(opacity=0);
+
+    -moz-opacity:0;
+
+    opacity:0; 
+
+    left:0px;
+
+    top: 0px;
+
+}
+
+.globalView {
+
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.topView {
+
+  /*background-color:   #696969;*/
+  height: 50px; 
+  width: 100%;
+}
+.titleImage {
+  
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  width: 100%;
+  margin-left: 0px;
+
+}
+
+.OneLabel {
+
+  display:block;
+  width: 13%;
+}
+
+.loginView {
+  
+  width: 13%;
+  margin-left: 80%;
+
+}
+.button1{
+   margin-bottom: 50px;
+}
+.loginLabel {
+  
+  height: 45px;
+  line-height: 25px;
+  width: 100%;
+}
+.chooseCard {
+
+  display: flex;
+  justify-content: flex-center;
+  height: 50px;
+  margin-top: 0px;
+  width: 100%;
+/*  background-color: #FFFFFF;*/
+}
+
+.functionMap {
+
+  height: 510px;
+  display: flex;
+  justify-content: flex-start;
+}
+.centerMap {
+  width: 70%;
+  height: 500px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 1px 1px #999;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #CDC9C9;
+}
+
+.homebottom {
+
+  display: flex;
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 95%;
+  margin-top: 10px;
+
+}
+
+.allRight {
+
+  width: 30%;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rightTop {
+  background-color:skyblue;
+  width: 50%;
+  height: 100%;
+}
+
+.rightBottom {
+
+  background-color: lavender;
+  width:50%;
+  height: 100%;
+
+
+}
+.rightCenter {
+
+  background-color: silver;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rightBottomTwo {
+  width: 500px;
+  height: 460px;
+  margin-top: 10px;
+}
+
+.tab {
+
+  width: 100%;
+}
+.tab-title {
+  height: 25px;
+  font-size: 0;
+  background-color: #778899;
+  width: 100%;
+}
+.tab-title .item {
+  display: inline-block;
+  width: 50%;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+}
+.tab-title .item-cur {
+  color: black;
+  background-color: #778899;
+}
+.tab-cont {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height:475px;
+  overflow: hidden;
+}
+.tab-cont__wrap {
+  position:absolute;
+
+  width: 100%;
+}
+.tab-cont .item {
+  width: 100%;
+  height: 525px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+}
+
+
+
+.background {
+  background-color: #f0fff0;
+  height: 100%;
+  width: 100%
+}
+
+.top {
+  display: flex;
+  background-color: white;
+  height: 60px;
+  width: 100%
+ 
+ }
+
+.imageDiv {
+ 
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 30px;
+  width: 200px;
+}
+.topbottom{
+  
+  background-color: blue;
+  height: 525px;
+  width: 80%
+
+}
+
+.bttomDiv {
+
+  width: 100%;
+  height: 600px;
+  display:flex;
+  justify-content: flex-start;
+  background-color: #ccc;
+
+}
+
+.bottomRightDiv{
+
+  width: 85%;
+  height: 525px;
+  background-color: blue;
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+.bottmLeftDiv {
+
+   width: 15%;
+   height: 600px;
+   background-color: #2B3946;
+}
+
+.NavDiv{
+
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.titleleft{
+  
+  width: 100%;
+  height: 525px;
+  display:flex;
+  justify-content: flex-start;
+  background-color: #ccc;
+
+}
+.leftimg{
+  width: 30%;
+  height:25px;
+    margin-left:40px;
+    margin-top: 20px;
+}
+.ChooseBtn {
+
+  margin-top: 10px;
+  width: 120%;
+
+  /*background-color: red;*/
+}
+
+.titleleft{
+  
+  width: 100%;
+  height: 525px;
+  display:flex;
+  justify-content: flex-start;
+  background-color: #ccc;
+
+}
+.imageSize{
+  background-color:  #333;
+}
+.logCard {
+
+  display: flex;
+  justify-content: flex-center;
+ /* height: 25px;*/
+  margin-top: 15px;
+  width: 100%;
+
+}

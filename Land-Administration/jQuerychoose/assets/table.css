@@ -1,0 +1,54 @@
+
+  
+  #table
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+  margin-left: 0px;
+/*  margin-right: 1px;*/
+  margin-top: 0px;
+  }
+
+#table td, #table th 
+  {
+  font-size:15px;
+  border:1px solid #ccc;
+  padding:3px 7px 3px 7px;
+  text-align: center;
+  }
+
+#table th 
+  {
+  font-size:15px;
+  text-align:center;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#495B69;
+  color:#fff;
+  }
+
+#table tr.alt td 
+  {
+  color:#000000;
+  background-color:#A6E1EC;
+  transition:1.0s;
+  }
+  
+#table th:hover{                                      /* 鼠标经过时 */  
+    background-color:#16B398;   
+}  
+
+#table td:hover{
+  background-color: #16B398;
+}
+
+#table th{
+  transition:1.0s;
+}
+
+#table tr.alt td:hover 
+  {
+   background-color:#A6E1EC;
+  }
+ 

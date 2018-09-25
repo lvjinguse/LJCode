@@ -1,0 +1,125 @@
+
+img {
+
+}
+
+.userManagerTtile {
+	
+	font-size: 16px;
+	color: #333;
+	margin-top: 10px;
+	text-align: center;
+	display:block;
+}
+
+.userManagerClose {
+
+	margin-right: 3px;
+	margin-top: 3px;
+	float: right;
+}
+
+.userManagerTop {
+	
+
+	display: flex;
+ 	justify-content: flex-start;
+	height: 55px;
+	width: 100%;
+	border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: #CDC9C9;
+}
+.buttonStyle {
+
+	width: 100px;
+	height: 50px;
+	margin-right: 10px;
+	margin-top: 12px;
+	background-color: blue;
+}
+
+
+
+.imageSize {
+	
+	height: 15px; 
+	width: 15px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.contentStyle {
+	
+	display: flex;
+ 	justify-content: flex-start;
+	margin-top: 15px;
+	height: 85%;
+	width: 100%;
+
+}
+
+
+.listDiv {
+	height: 100%;
+	width: 75%;
+	border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: #CDC9C9;
+}
+.contentRight {
+
+	height: 100%;
+	width: 100%;
+	margin-left: 10px;
+    font-size: 14px;
+
+}
+
+.PermissionsBottom {
+
+	height: 83.5%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.PermissionsChoose {
+	
+	height: 90%;
+	width: 100%;
+	border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: skyblue;
+}
+
+.PermissionsBtn {
+
+	margin-left: 5px;
+	height: 100%;
+	width: 30%;
+	font-size: 12px;
+}
+
+
+.cellColor_white {
+	background-color: #fff;
+}
+.cellColor_orange {
+	
+	background-color: #F4A460;
+}
+
+.cellColor_purple {
+
+	background-color: #CAE1FF;
+}

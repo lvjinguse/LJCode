@@ -1,0 +1,90 @@
+
+canvas{
+
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+}
+
+.adressChoose {
+
+	width: 100%;
+	height: 50%;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: skyblue;
+
+}
+
+.typeChoose {
+
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: skyblue;
+}
+
+.tongjileftDiv {
+
+	display: flex;
+ 	justify-content: flex-start;
+ 	height: 100%;
+}
+.chooseDataType {
+	display: flex;
+	background-color: #f0fff0;
+	/*margin-top: 20px;*/
+	height: 100%;
+	width: 30%;
+	font-size: 14px;
+
+	
+
+}
+
+.statisticalFigure {
+	
+	margin-top: 20px;
+	height: 100%;
+	width: 70%;
+}
+
+.borders{
+
+	height: 700px;
+	background-color: #9FB6CD;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: #CDC9C9;
+
+}
+.smallBorders{
+
+	height: 300px;
+	width: 400px;
+	background-color: #B0B0B0;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: #CDC9C9;
+}
+.titleStyel{
+	height: 35px;
+	background-color: #BFEFFF;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE 5tml>
+<html>
+<head>
+	<title></title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>  
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel="stylesheet" type="text/css" href="userManager/userManager.css">
+</head>
+<body>
+<div style="background-color: #f0fff0;width: 100%;height: 700px">
+    <div class="container">
+         
+    
+        <div id="content" class="row-fluid">
+        <div class="col-md-9" style="background-color: #f0fff0;height:700px;">
+        	 
+             <link rel="stylesheet" type="text/css" href="css/table.css" />   
+                              
+                                 <table id="table">
+                                        <tr>                                
+                                            <th>字段名</th>
+                                            <th>字段值</th>                
+                                        </tr>
+                              
+                                        <tbody id="tbody"></tbody>
+                                 </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                            <script type="text/javascript">
+                                $(document).ready(function (){
+                                $.ajax({
+                                     type:"get",
+                                     dataType: "json",
+                                     url: "http://122.114.38.213:8080/wjkfq_gis/lyRemoteServ/GetGisObj?TType=%E4%BC%81%E4%B8%9A%E8%8C%83%E5%9B%B4&id=535",
+                                   
+                            
+                                    success: function (res){
+                                        console.log(res);
+                                        displayRes(res)
+                                        }
+                                    });
+                                })
+
+                                function displayRes(res) {
+                                    $("#tbody").empty();
+                                    $("#tbody").append('<tr>' + 
+                                        '<td>' + res.$id + '</td>' +
+                                        '<td>' + res.OBJECTID + '</td>' 
+                                        + '</tr>')
+
+                                    // for(var i = 0; i < res.length; i++ ){
+                                    //     $("#tbody").append('<tr>' +
+                                    //         '<td>' + res.$id + '</td>' +
+                                    //         '<td>' + res.OBJECTID + '</td>' +
+                                    //         // '<td>' + res[i].LoginName + '</td>' +
+                                    //         // '<td>' + res[i].bsR_Name + '</td>' +
+                                    //         // '<td>' + res[i].bsO_Righrs + '</td>' +
+                                    //         // '<td>' + res[i].LLoginDT + '</td>' +
+                                    //         // '<td>' + res[i].Name + '</td>'
+                                    //         + '</tr>'                                            
+                                    //         )
+                                    // }
+                                }
+                            </script>
+</body>
+</html>
